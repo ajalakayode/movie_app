@@ -5,10 +5,10 @@ import {useState} from 'react'
 
 export default function MobileNav() {
  const [open, setOpen] = useState(false)
-//  const [val, setVal] = useState(10)
+ const [val, setVal] = useState(0)
 
  function changeVal(){
-    // setVal(add => add + 20)
+    setVal(add => add + 1)
  }
 
  function controlNav(){

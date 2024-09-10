@@ -3,6 +3,8 @@ import React from 'react'
 import { useContext } from 'react'
 import { SidebarContext } from '../providers'
 import Image from 'next/image'
+import Delete from './Delete'
+
 
  
 
@@ -13,18 +15,18 @@ export default function WishesPage() {
     <div>
       {movieItem.length == 0 ?
       (
-        <h2>add your movies to your list</h2>
+        <h2>Add your movies to your list</h2>
       )
     :
     (
       <div>
-        <table className='w-4/5 m-auto'>
+        <table className='w-4/5 m-auto '>
           <thead>
             <tr>
-              <th>image</th>
-              <th>title</th>
-              <th>epilogue</th>
-              <th>actors</th>
+              <th className='px-10'>image</th>
+              <th className='p-10'>title</th>
+              <th className='p-10'>epilogue</th>
+              <th className='p-10'>actors</th>
             </tr>
           </thead>
 
@@ -34,9 +36,13 @@ export default function WishesPage() {
 
           <td><Image src={`/bp/${movie.title.toLowerCase().split(' ').join('-')}.jpg`} alt={movie.title} title={movie.cat} width={'150'} height={'200'}/></td>
 
-          <td>{movie.title}</td>
-          <td>{movie.epi}</td>
-          <td>{movie.actors}</td>
+          <td className='py-3 px-3'>{movie.title}</td>
+          <td className='py-4 px-4'>{movie.epi}</td>
+          <td className='py-5 px-5'>{movie.actors}</td>
+
+          <td className='py-6 px-6'>
+            <Delete index={index} title={movie.title}/>
+          </td>
 
         </tr>
 

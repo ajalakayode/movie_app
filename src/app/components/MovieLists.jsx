@@ -22,7 +22,7 @@ export default function MovieLists() {
  
     </div>
     <Link href={'/movies'} className= 'flex items-center justify-center my-5' >
-    <span className='bg-blue-700 text-white rounded-md p-7' >See More</span>
+    <span className='bg-red-700 text-white rounded-md p-7' >See More</span>
     </Link>
     </>
   )

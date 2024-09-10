@@ -24,21 +24,21 @@ export default function MovieDetails({params}) {
 
   const relatedCard = relatedMovies.map((card,index) =>
     <Link href={`/movies/${card.title.split(' ').join('-')}`} title={card.title} className='cursor-pointer' key={index}>
-    <MovieCard title={card.title} kind={card.kind} category={card.category} type={card.type} date_released={card.date_released} rating ={card.rating}/>
+    <MovieCard title={card.title} kind={card.kind} category={card.category} type={card.type} runtime={card.runtime} date_released={card.date_released} rating ={card.rating}/>
     </Link>
   )
 
   return (
 
     <div className="px-16">
-      <h1 className={`${sat.className} text-2xl`} style={{paddingBlock: '20px', backgroundColor: 'blue'}}> {details.title}</h1>
-      <p>{details.epilogue}</p>
+      <h1 className={`${sat.className} text-2xl`} style={{paddingBlock: '20px', backgroundColor: 'yellow'}}> {details.title}</h1> <br />
+      <p>{details.epilogue}</p> <br />
 
       <button 
-      onClick={handleMovieAdd} className= "bg-slate-800 text-slate-100 p-3 rounded-md">add movie</button>
+      onClick={handleMovieAdd} className= "bg-green-500 text-slate-100 p-3 rounded-full p3-4 px-3 pt-3 pb-3" >Add movie</button> <br /> <br /> <br />
 
       <div>
-        <h2 className="text-4xl font-bold">related movies</h2>
+        <h2 className="pt-3 pb-3 text-2xl text-black-100 bg-yellow-400">Related movies</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 
           {relatedCard}

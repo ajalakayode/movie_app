@@ -17,7 +17,7 @@ export default function MoviePage() {
   const cards = filterLists.length == 0 ?(<hi>Sorry, search item does not exist </hi>) : filterLists.map((card,index) => (
     <section key={index}>
       <Link href={`/movies/${card.title.split(' ').join('-')}`} title={card.title} className='cursor-pointer'>
-      <MovieCard title={card.title} type={card.type} rating = {card.rating} img={card.image}/>
+      <MovieCard title={card.title} type={card.type} runtime={card.runtime} img={card.image}/>
       </Link>
 
     </section>
