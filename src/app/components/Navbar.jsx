@@ -8,8 +8,8 @@ import { GiShoppingCart } from "react-icons/gi";
 export default function Navbar() {
   const {val} = useContext(SidebarContext)
   return (
-    <nav>
-        <ul className= "flex justify-around capitalize items-center h-20 bg-purple-950 text-white text-lg">
+    <nav className="">
+        <ul className= "md:flex hidden  justify-around capitalize items-center h-20 bg-purple-950 text-white">
 
             <Link href={'/'}>
               <li>Home</li>

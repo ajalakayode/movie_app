@@ -8,7 +8,7 @@ import { FaFacebook } from "react-icons/fa6";
 
 export default function ContactUsPage() {
     return (
-      <div  className="h-screen flex flex-col text-3l items-center justify-center text font-bold h-21 pt-21 ">
+      <div  className="h-screen flex flex-col text-3l items-center justify-center text font-bold h-21 pt-21 py-7 px-7">
         <div>
         <HiOutlineMailOpen />
         <p className="bg-yellow-300"> uniglobaltheater@movies.com</p>  <br />
@@ -38,7 +38,7 @@ export default function ContactUsPage() {
               </label> <br /> <br/>
 
               <h2 className="bg-yellow-300">Follow us</h2> <br/>
-              <li  className="flex justify-around align-items padding 10px">
+              <li  className="flex justify-around align-items padding 10px rounded-full">
               <IoLogoLinkedin /> <FaXTwitter />
               <FaWhatsapp />
               <FaInstagram />
