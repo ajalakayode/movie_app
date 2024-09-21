@@ -14,7 +14,7 @@ import { Rating } from '@mui/material'
         <p>{date_released}</p>
         <p>{actor}</p>
         <p>{kind}</p>
-        <p className="text-blue-700 hover:text-yellow-500 mt-2">
+        <p className="text-blue-700 mt-2">
           {parseInt(runtime / 60)} hr{parseInt(runtime / 60) > 1 ? 's ' : ' '}
           {runtime % 60} min
           </p>

@@ -17,13 +17,17 @@ export default function MovieLists() {
 
   return (
     <>
-    <div className='grid grid-cols-3 gap-4 px-16 py-32 capitalize'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 px-4 sm:px-6 md:px-8 py-12 pt-10 capitalize'>
     {cards}
  
     </div>
+
+    <div >
     <Link href={'/movies'} className= 'flex items-center justify-center my-5' >
-    <span className='bg-red-700 text-white rounded-md p-7' >See More</span>
+    <span className='bg-red-700 text-white rounded-md p-7 ' >See More</span>
     </Link>
+
+    </div>
     </>
   )
 }

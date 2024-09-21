@@ -3,7 +3,7 @@ import Link from "next/link";
 import MobileNav from "./MobileNav";
 import { useContext } from "react";
 import {SidebarContext} from "../providers"
-import { GiShoppingCart } from "react-icons/gi";
+import { IoIosHeartEmpty } from "react-icons/io";
  
 export default function Navbar() {
   const {val} = useContext(SidebarContext)
@@ -33,7 +33,7 @@ export default function Navbar() {
             </Link>
 
             <Link href={'/wishes'}> 
-              <li className=""add to cart><GiShoppingCart /> {val}</li>
+              <li className=""add to cart><IoIosHeartEmpty /> {val}</li>
             </Link>
            
         </ul>
