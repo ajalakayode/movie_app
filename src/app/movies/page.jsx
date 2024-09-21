@@ -28,8 +28,13 @@ export default function MoviePage() {
       <input type="text" name="search" id="search" className="outline-none block mt-4 w-4/5 text-2xl" placeholder="Search for movie or category or actor" defaultValue={searchMovie} onChange={(e)=>filterSearch(e)} />
       <IoMdSearch className="text-2xl text-red-600"/>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-16 py-32 capitalize"></div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-16 py-7 capitalize">
+
       {cards}
+      </div>
+
+       
       </>
     )
 }

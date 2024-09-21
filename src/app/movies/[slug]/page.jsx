@@ -39,7 +39,8 @@ export default function MovieDetails({params}) {
 
       <div>
         <h2 className="pt-3 pb-3 text-2xl text-black-100 bg-yellow-400">Related movies</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4"> */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-16 py-7" >
 
           {relatedCard}
         </div>
