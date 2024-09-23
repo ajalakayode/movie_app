@@ -23,9 +23,9 @@ export default function Navbar() {
               <li>Now Showing</li>
             </Link>
 
-            <Link href={'/top-rated'}>
+            {/* <Link href={'/top-rated'}>
               <li>Top Rated</li>
-            </Link>
+            </Link> */}
 
             
             <Link href={'contact'}>

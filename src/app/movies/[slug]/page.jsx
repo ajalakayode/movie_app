@@ -30,15 +30,22 @@ export default function MovieDetails({params}) {
 
   return (
 
-    <div className="px-16">
+    <div className="px-16 py-3 font-serif">
       <h1 className={`${sat.className} text-2xl`} style={{paddingBlock: '20px', backgroundColor: 'yellow'}}> {details.title}</h1> <br />
-      <p>{details.epilogue}</p> <br />
+
+      <div className="bg-blue-600 py-3 px-4 font-serif">
+      <p>{details.epilogue} </p> <br />
+      <p >{details.keywords}</p> <br />
+      <p>{details.category}</p> <br />
+      <p >{details.kind}</p> <br />
+      <p >{details.date_released}</p> <br />
+      </div> <br />
 
       <button 
-      onClick={handleMovieAdd} className= "bg-green-500 text-slate-100 p-3 rounded-full p3-4 px-3 pt-3 pb-3" >Add movie</button> <br /> <br /> <br />
+      onClick={handleMovieAdd} className= "bg-green-500 text-slate-100 p-3 rounded-full p3-4 px-3 pt-3 pb-3 font-serif" >Add Movie</button> <br /> <br /> <br />
 
       <div>
-        <h2 className="pt-3 pb-3 text-2xl text-black-100 bg-yellow-400">Related movies</h2>
+        <h2 className="pt-3 pb-3 text-2xl text-black-100 bg-blue-600 font-serif">Related Movies</h2>
         {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4"> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-16 py-7" >
 

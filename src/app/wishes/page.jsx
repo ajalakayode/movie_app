@@ -34,11 +34,11 @@ export default function WishesPage() {
       {movieItem.map((movie, index) =>(
         <tr key={index}>
 
-          <td><Image src={`/bp/${movie.title.toLowerCase().split(' ').join('-')}.jpg`} alt={movie.title} title={movie.cat} width={'150'} height={'200'}/></td>
+          <td className='py-3'><Image src={`/bp/${movie.title.toLowerCase().split(' ').join('-')}.jpg`} alt={movie.title} title={movie.cat} width={'150'} height={'200'}/></td>
 
-          <td className='py-3 px-3'>{movie.title}</td>
-          <td className='py-4 px-4'>{movie.epi}</td>
-          <td className='py-5 px-5'>{movie.actors}</td>
+          <td className='py-4 px-6'>{movie.title}</td>
+          <td className='py-5 px-7'>{movie.epi}</td>
+          <td className='py-6 px-8'>{movie.actors}</td>
 
           <td className='py-6 px-6'>
             <Delete index={index} title={movie.title}/>
