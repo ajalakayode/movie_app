@@ -2,7 +2,7 @@
 
 export default function Aboutpage() {
   return (
-    <div  className=" h-screen flex flex-col text-3l items-center justify-center font-bold min-h-full">
+    <div  className=" h-screen flex flex-col text-3l items-center justify-center font-bold min-h-screen">
    
         <p className="items-center justify-center text uppercase text-red-600 font-serif">Welcome!!! to UniGlobal Theater</p>
         <p className="px-12 py-12 font-sans">UniGlobal Thearter (your first choice for varieties of captivating movies)  is a dynamic platform built that helps you discover and explore movies across various genres. With features like movie search, category and actor filters, as well as the ability to like movies and add them to your Watch Later list, we provide a tailored experience for movie enthusiasts. Our app is fast, responsive, and accessible on any device, designed to make movie exploration effortless. Whether you’re looking for action, drama, or comedy, UniGlobal Thearter has something for everyone. Join us and dive into the world of cinema!</p>
