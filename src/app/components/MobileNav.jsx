@@ -39,9 +39,9 @@ const [val, setVal] = useState(0)
               <li>Contact</li>
             </Link>
 
-            <Link href={'/Help'}>
+            {/* <Link href={'/Help'}>
               <li>Help</li>
-            </Link>
+            </Link> */}
 
             {/* <li>{val}</li>
             <li onClick={changeVal} >increase</li> */}
